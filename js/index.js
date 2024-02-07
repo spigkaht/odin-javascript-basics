@@ -1,15 +1,21 @@
-let a = 10;
-console.log(a);
-console.log(9 * a);
+function add7(number) {
+  return number + 7;
+}
 
-let b = 7 * a;
-console.log(b);
+function multiply(num1, num2) {
+  return num1 * num2;
+}
 
-const max = 57;
-const actual = max - 13;
-const percentage = actual / max;
-console.log(percentage);
+function capitalize(string) {
+  let stringEnd = string.slice(1);
+  return string.charAt(0).toUpperCase() + stringEnd.toLowerCase();
+}
 
-console.log(23 + 97);
-console.log(1, 2, 3, 4, 5, 6);
-console.log((4 + 6 + 9) / 77);
+function lastLetter(string) {
+  return string.slice(-1);
+}
+
+console.log(add7(7));
+console.log(multiply(5, 7));
+console.log(capitalize("BALLS"));
+console.log(lastLetter("balls"));
